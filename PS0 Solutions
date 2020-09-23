@@ -1,0 +1,69 @@
+1
+$ delay 2000
+$ show goal
+$ git commit
+$ git commit
+
+2
+$ delay 2000
+$ show goal
+$ git branch bugFix
+$ git checkout bugFix
+
+3
+$ delay 2000
+$ show goal
+$ git branch bugFix
+$ git checkout bugFix
+$ git commit
+$ git checkout master
+$ git commit
+$ git merge bugFix
+
+4
+$ delay 2000
+$ show goal
+$ git branch bugFix
+$ git checkout bugFix
+$ git commit
+$ git checkout master
+$ git commit
+$ git checkout bugFix
+$ git rebase master
+
+5
+$ delay 2000
+$ show goal
+$ git checkout C4
+
+6
+$ delay 2000
+$ show goal
+$ git checkout C4
+$ git checkout bugFix^
+
+7
+$ delay 2000
+$ show goal
+$ git checkout master~2
+$ git branch -f bugFix HEAD^
+$ git checkout C6
+$ git branch -f master HEAD
+$ git checkout C1
+
+8
+$ delay 2000
+$ show goal
+$ git resel local~1
+$ git checkout pushed
+$ git revert pushed
+
+9
+$ delay 2000
+$ show goal
+$ git cherry-pick C3 C4 C7
+
+10
+$ delay 2000
+$ show goal
+$ git rebase -i overHere
