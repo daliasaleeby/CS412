@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1= title
+    p In the beautiful city of #{city} it is currently #{temp_f} degrees.
+    form(method='POST' action='http://localhost:3000/ps4/')
+        input(type='text', name='city', placeholder='City')
+        button(type='submit', name='submit') Enter
